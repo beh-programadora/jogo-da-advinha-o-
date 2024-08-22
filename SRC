@@ -1,0 +1,18 @@
+import random  # Nome correto do módulo
+
+def adivinhar_numero():
+    numero_secreto = random.randint(1,100)
+    tentativas = 0
+    while True:
+     chute =int(input("advinhe o numero(1-100):")) 
+    tentativas += 1
+    if chute < numero_secreto:
+            print("muito baixo!")
+    elif chute > numero_secreto:
+            print("muito alto!")
+    else:
+     print(f"parabéns! voce adivinhou em { tentativas} tentativas.")
+    while True:
+     break  # This is correct because it's inside a loop
+
+adivinhar_numero()
